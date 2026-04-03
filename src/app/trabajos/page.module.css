@@ -1,0 +1,93 @@
+.hero {
+  padding: 8rem 0 4rem;
+  text-align: center;
+  background-color: var(--color-bg-base);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.heroContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: var(--color-gold);
+  font-family: var(--font-secondary), sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-family: var(--font-primary), sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--color-white-off);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.heroSubtitle {
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1.15rem;
+  color: var(--color-silver);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.portfolio {
+  padding: 6rem 0;
+  background: var(--color-bg-base);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(140, 140, 140, 0.1);
+  background: var(--color-bg-sec);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-5px);
+}
+
+.imagePlaceholder {
+  height: 300px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.1);
+}
+
+.imagePlaceholder span {
+  font-family: var(--font-primary), sans-serif;
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardContent h3 {
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-white-off);
+  margin-bottom: 0.5rem;
+}
+
+.cardContent p {
+  color: var(--color-silver);
+  font-size: 0.95rem;
+}

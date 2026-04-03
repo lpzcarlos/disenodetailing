@@ -1,0 +1,280 @@
+/* HERO INTERIOR */
+.hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-base);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.95) 100%);
+  z-index: 1;
+}
+
+.heroContainer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: var(--color-gold);
+  font-family: var(--font-secondary), sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-family: var(--font-primary), sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.95;
+  color: var(--color-white-off);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.heroSubtitle {
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1.15rem;
+  color: var(--color-silver);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* CATALOG GRID */
+.catalog {
+  padding: 6rem 0;
+  background: var(--color-bg-base);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  background: var(--color-bg-sec);
+  border: 1px solid rgba(140, 140, 140, 0.1);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  color: var(--color-gold);
+}
+
+.badge {
+  background: rgba(201, 168, 76, 0.1);
+  color: var(--color-gold);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.cardTitle {
+  font-family: var(--font-primary), sans-serif;
+  font-size: 2rem;
+  color: var(--color-white-off);
+  margin-bottom: 1rem;
+}
+
+.cardDesc {
+  color: var(--color-silver);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.listTitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-white-off);
+  font-family: var(--font-secondary), sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.includesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.includesList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--color-silver);
+  line-height: 1.4;
+}
+
+.checkIcon {
+  color: var(--color-gold);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(140, 140, 140, 0.1);
+}
+
+.idealFor {
+  font-size: 0.9rem;
+  color: var(--color-silver);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.idealFor strong {
+  color: var(--color-white-off);
+}
+
+/* BUTTONS */
+.btnSecondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  font-family: var(--font-secondary), sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background: var(--color-gold);
+  color: var(--color-bg-base);
+}
+
+.btnPrimary, .btnPrimaryAlt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-family: var(--font-secondary), sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary {
+  background: var(--color-gold);
+  color: var(--color-bg-base);
+  border: 1px solid var(--color-gold);
+}
+
+.btnPrimary:hover {
+  background: var(--color-gold-hover);
+  border-color: var(--color-gold-hover);
+}
+
+.btnPrimaryAlt {
+  background: var(--color-white-off);
+  color: var(--color-bg-base);
+}
+
+.btnPrimaryAlt:hover {
+  background: var(--color-gold);
+  color: var(--color-bg-base);
+}
+
+
+/* NOTES SECTION */
+.pricingNote {
+  background: var(--color-bg-ter);
+  padding: 4rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.noteText {
+  color: var(--color-silver);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.noteText strong {
+  color: var(--color-gold);
+}
+
+/* HELP SECTION */
+.helpSection {
+  padding: 8rem 0;
+  background: var(--color-bg-base);
+}
+
+.text-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.helpTitle {
+  font-family: var(--font-primary), sans-serif;
+  font-size: 3rem;
+  color: var(--color-white-off);
+  margin-bottom: 1.5rem;
+}
+
+.helpText {
+  color: var(--color-silver);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

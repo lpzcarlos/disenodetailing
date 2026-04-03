@@ -1,0 +1,163 @@
+.hero {
+  padding: 8rem 0 4rem;
+  text-align: center;
+  background-color: var(--color-bg-base);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.heroContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: var(--color-gold);
+  font-family: var(--font-secondary), sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-family: var(--font-primary), sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--color-white-off);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.heroSubtitle {
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1.15rem;
+  color: var(--color-silver);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.contact {
+  padding: 8rem 0;
+  background: var(--color-bg-sec);
+}
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.contactInfo h2 {
+  font-family: var(--font-primary), sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-white-off);
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: var(--color-silver);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoList li {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.infoIcon {
+  color: var(--color-gold);
+  margin-top: 0.2rem;
+}
+
+.infoList strong {
+  display: block;
+  font-family: var(--font-secondary), sans-serif;
+  color: var(--color-white-off);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.infoList span {
+  color: var(--color-silver);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* FORM */
+.form {
+  background: var(--color-bg-ter);
+  padding: 3rem;
+  border: 1px solid rgba(140, 140, 140, 0.1);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  font-family: var(--font-secondary), sans-serif;
+  color: var(--color-white-off);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-bg-base);
+  border: 1px solid rgba(140, 140, 140, 0.2);
+  color: var(--color-white-off);
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-gold);
+  color: var(--color-bg-base);
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--color-gold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: var(--color-gold-hover);
+  border-color: var(--color-gold-hover);
+}
+
+@media (max-width: 768px) {
+  .splitGrid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

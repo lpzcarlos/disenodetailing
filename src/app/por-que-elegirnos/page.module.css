@@ -1,0 +1,90 @@
+.hero {
+  padding: 8rem 0 4rem;
+  text-align: center;
+  background-color: var(--color-bg-base);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.heroContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: var(--color-gold);
+  font-family: var(--font-secondary), sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-family: var(--font-primary), sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--color-white-off);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.heroSubtitle {
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 1.15rem;
+  color: var(--color-silver);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.content {
+  padding: 8rem 0;
+  background: var(--color-bg-sec);
+}
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.textContent h2 {
+  font-family: var(--font-primary), sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-white-off);
+  margin-bottom: 2rem;
+}
+
+.textContent p {
+  color: var(--color-silver);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.imageContent {
+  height: 500px;
+}
+
+.placeholderImg {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(140, 140, 140, 0.1);
+}
+
+.placeholderImg span {
+  font-family: var(--font-primary), sans-serif;
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .splitGrid {
+    grid-template-columns: 1fr;
+  }
+}

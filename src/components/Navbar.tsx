@@ -1,0 +1,54 @@
+"use client";
+
+import Link from "next/link";
+import styles from "./Navbar.module.css";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navLinks = [
+    { name: "Inicio", path: "/" },
+    { name: "Servicios", path: "/servicios" },
+    { name: "Nuestros Trabajos", path: "/trabajos" },
+    { name: "Por Qué Elegirnos", path: "/por-que-elegirnos" },
+    { name: "Contacto", path: "/contacto" },
+  ];
+
+  return (
+    <header className={styles.header}>
+      <div className={`container ${styles.navbar}`}>
+        <Link href="/" className={styles.logo}>
+          DISEÑO <span>DETAILING</span>
+        </Link>
+        
+        <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
+          <ul className={styles.navList}>
+            {navLinks.map((link) => (
+              <li key={link.path}>
+                <Link
+                  href={link.path}
+                  className={`${styles.navLink} ${pathname === link.path ? styles.active : ""}`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <button 
+          className={styles.mobileMenuBtn} 
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+    </header>
+  );
+}
