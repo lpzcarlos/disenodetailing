@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   background-color: var(--color-bg-base);
-  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.15);
 }
 
 .heroOverlay {
@@ -76,7 +76,7 @@
 }
 
 .card:hover {
-  border-color: rgba(201, 168, 76, 0.4);
+  border-color: rgba(255, 0, 0, 0.4);
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
@@ -93,7 +93,7 @@
 }
 
 .badge {
-  background: rgba(201, 168, 76, 0.1);
+  background: rgba(255, 0, 0, 0.1);
   color: var(--color-gold);
   padding: 0.3rem 0.8rem;
   font-size: 0.75rem;
@@ -230,7 +230,7 @@
   background: var(--color-bg-ter);
   padding: 4rem 0;
   text-align: center;
-  border-top: 1px solid rgba(201, 168, 76, 0.15);
+  border-top: 1px solid rgba(255, 0, 0, 0.15);
 }
 
 .noteText {

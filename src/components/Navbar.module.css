@@ -1,11 +1,18 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(201, 168, 76, 0.15); /* Subdued gold border */
+  border-bottom: 1px solid rgba(255, 0, 0, 0.15);
   padding: 1.2rem 0;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(10, 10, 10, 0.1);
+  padding: 0.8rem 0;
 }
 
 .navbar {
@@ -19,7 +26,11 @@
   font-size: 1.8rem;
   letter-spacing: 0.1em;
   color: var(--color-white-off);
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled .logo {
+  font-size: 1.4rem;
 }
 
 .logo span {
@@ -44,6 +55,10 @@
   color: var(--color-silver);
   transition: all 0.3s ease;
   position: relative;
+}
+
+.header.scrolled .navLink {
+  font-size: 0.8rem;
 }
 
 .navLink::after {
@@ -81,7 +96,7 @@
     left: 0;
     width: 100%;
     background: var(--color-bg-base);
-    border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.15);
     padding: 2rem 0;
     transform: translateY(-100%);
     opacity: 0;

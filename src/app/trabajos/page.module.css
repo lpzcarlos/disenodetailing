@@ -2,7 +2,7 @@
   padding: 8rem 0 4rem;
   text-align: center;
   background-color: var(--color-bg-base);
-  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.15);
 }
 
 .heroContainer {
@@ -56,7 +56,7 @@
 }
 
 .card:hover {
-  border-color: rgba(201, 168, 76, 0.4);
+  border-color: rgba(255, 0, 0, 0.4);
   transform: translateY(-5px);
 }
 

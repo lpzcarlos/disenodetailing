@@ -25,7 +25,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={`container ${styles.heroContainer}`}>
-          <motion.p 
+          <motion.p
             className={styles.eyebrow}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -33,15 +33,15 @@ export default function Home() {
           >
             SABADELL · BARCELONA
           </motion.p>
-          <motion.h1 
+          <motion.h1
             className={styles.heroTitle}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Tu coche merece<br/>el mejor cuidado.
+            Tu coche merece<br />el mejor cuidado.
           </motion.h1>
-          <motion.p 
+          <motion.p
             className={styles.heroSubtitle}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -49,7 +49,7 @@ export default function Home() {
           >
             Detailing profesional que protege, restaura y transforma la estética de tu vehículo. Tratamientos manuales con productos de primera calidad.
           </motion.p>
-          <motion.div 
+          <motion.div
             className={styles.heroActions}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -68,7 +68,7 @@ export default function Home() {
       {/* PROPUESTA DE VALOR */}
       <section className={styles.sectionValue}>
         <div className="container">
-          <motion.h2 
+          <motion.h2
             className={styles.sectionTitle}
             initial="hidden"
             whileInView="visible"
@@ -77,8 +77,8 @@ export default function Home() {
           >
             ¿Por qué Diseño Detailing?
           </motion.h2>
-          
-          <motion.div 
+
+          <motion.div
             className={styles.grid3}
             initial="hidden"
             whileInView="visible"
@@ -116,14 +116,14 @@ export default function Home() {
           <div className={styles.sectionHeader}>
             <div>
               <p className={styles.eyebrow}>LO QUE HACEMOS</p>
-              <h2 className={styles.sectionTitle}>Servicios de detailing<br/>que marcan la diferencia</h2>
+              <h2 className={styles.sectionTitle}>Servicios de detailing<br />que marcan la diferencia</h2>
             </div>
             <Link href="/servicios" className={styles.linkAction}>
               Explorar todos los servicios <ArrowRight size={18} />
             </Link>
           </div>
 
-          <motion.div 
+          <motion.div
             className={styles.grid3}
             initial="hidden"
             whileInView="visible"
@@ -161,14 +161,14 @@ export default function Home() {
       {/* ANTES Y DESPUES */}
       <section className={styles.sectionSplit}>
         <div className={styles.splitContent}>
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
           >
             <p className={styles.eyebrow}>LOS RESULTADOS HABLAN</p>
-            <h2 className={styles.sectionTitle}>El antes y después<br/>que lo cambia todo.</h2>
+            <h2 className={styles.sectionTitle}>El antes y después<br />que lo cambia todo.</h2>
             <p className={styles.splitText}>
               No hace falta palabras cuando los resultados son tan evidentes. Deja que nuestro trabajo hable por nosotros.
             </p>
@@ -189,8 +189,8 @@ export default function Home() {
         <div className="container">
           <p className={styles.eyebrowCentered}>ASÍ TRABAJAMOS</p>
           <h2 className={styles.sectionTitleCentered}>Simple, profesional, sin sorpresas.</h2>
-          
-          <motion.div 
+
+          <motion.div
             className={styles.processGrid}
             initial="hidden"
             whileInView="visible"
@@ -239,7 +239,7 @@ export default function Home() {
       <section className={styles.sectionCta}>
         <div className={styles.ctaOverlay}></div>
         <div className={`container ${styles.ctaContainer}`}>
-          <motion.h2 
+          <motion.h2
             className={styles.ctaTitle}
             initial="hidden"
             whileInView="visible"
@@ -248,7 +248,7 @@ export default function Home() {
           >
             ¿Listo para ver la diferencia?
           </motion.h2>
-          <motion.p 
+          <motion.p
             className={styles.ctaSubtitle}
             initial="hidden"
             whileInView="visible"
