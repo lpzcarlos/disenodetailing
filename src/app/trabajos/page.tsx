@@ -2,6 +2,40 @@
 
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
+const trabajos = [
+  {
+    id: 1,
+    title: "Limpieza Detallada",
+    desc: "Lavado exhaustivo de interior y exterior al detalle.",
+    image: "/images/limpieza_detallada.jpg"
+  },
+  {
+    id: 2,
+    title: "Limpieza Esencial",
+    desc: "Lavado de mantenimiento con acabados profesionales.",
+    image: "/images/limpieza_esencial.png"
+  },
+  {
+    id: 3,
+    title: "Limpieza Interior",
+    desc: "Aspirado profundo, limpieza de tapicería y desinfección.",
+    image: "/images/limpieza_interior.png"
+  },
+  {
+    id: 4,
+    title: "Pulido de Carrocería",
+    desc: "Corrección de pintura y eliminación de imperfecciones.",
+    image: "/images/pulido_carroceria.png"
+  },
+  {
+    id: 5,
+    title: "Pulido de Faros",
+    desc: "Restauración de faros para recuperar transparencia original.",
+    image: "/images/pulido_faros.png"
+  }
+];
 
 export default function TrabajosPage() {
   const fadeIn = {
@@ -26,14 +60,14 @@ export default function TrabajosPage() {
       <section className={styles.portfolio}>
         <div className="container">
           <div className={styles.grid}>
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className={styles.card}>
+            {trabajos.map((item) => (
+              <div key={item.id} className={styles.card}>
                 <div className={styles.imagePlaceholder}>
-                  <span>Trabajo {item}</span>
+                  <Image src={item.image} alt={item.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ objectFit: 'cover' }} />
                 </div>
                 <div className={styles.cardContent}>
-                  <h3>Tratamiento Cerámico</h3>
-                  <p>Corrección de pintura y protección durante 3 años.</p>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
                 </div>
               </div>
             ))}

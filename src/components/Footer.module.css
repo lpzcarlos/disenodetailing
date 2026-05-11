@@ -13,16 +13,8 @@
 }
 
 .logo {
-  font-family: var(--font-primary), sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-  color: var(--color-white-off);
   display: inline-block;
   margin-bottom: 0.5rem;
-}
-
-.logo span {
-  color: var(--color-gold);
 }
 
 .claim {

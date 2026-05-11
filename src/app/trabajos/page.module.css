@@ -1,5 +1,5 @@
 .hero {
-  padding: 8rem 0 4rem;
+  padding: 9rem 0 4rem;
   text-align: center;
   background-color: var(--color-bg-base);
   border-bottom: 1px solid rgba(255, 0, 0, 0.15);
@@ -22,10 +22,12 @@
 
 .heroTitle {
   font-family: var(--font-primary), sans-serif;
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 0.95;
   color: var(--color-white-off);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .heroSubtitle {
@@ -67,6 +69,8 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid rgba(140, 140, 140, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 .imagePlaceholder span {
@@ -90,4 +94,14 @@
 .cardContent p {
   color: var(--color-silver);
   font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 7rem;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
 }

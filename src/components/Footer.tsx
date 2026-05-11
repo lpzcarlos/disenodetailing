@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -9,7 +10,7 @@ export default function Footer() {
         
         <div className={styles.brandCol}>
           <Link href="/" className={styles.logo}>
-            DISEÑO <span>DETAILING</span>
+            <Image src="/images/logocompleto.png" alt="Diseño Detailing" width={440} height={100} style={{ objectFit: 'contain', width: 'auto', height: '100px' }} />
           </Link>
           <p className={styles.claim}>Cuidado & Estética de Vehículos</p>
           <p className={styles.copyright}>© 2025 Diseño Detailing. Todos los derechos reservados.</p>

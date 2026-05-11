@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
 import { Shield, Sparkles, MapPin, ChevronRight, ArrowRight } from "lucide-react";
+import BeforeAfterSlider from "../components/BeforeAfterSlider";
 
 export default function Home() {
   const fadeIn = {
@@ -178,9 +179,7 @@ export default function Home() {
           </motion.div>
         </div>
         <div className={styles.splitImage}>
-          <div className={styles.placeholderImg}>
-            <span className={styles.placeholderText}>Demos de Antes / Después</span>
-          </div>
+          <BeforeAfterSlider />
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -31,9 +32,10 @@ export default function Navbar() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.navbar}`}>
         <Link href="/" className={styles.logo}>
-          DISEÑO <span>DETAILING</span>
+          <Image src="/images/logocompleto.png" alt="Diseño Detailing" width={500} height={120} className={styles.logoDesktop} priority loading="eager" style={{ width: 'auto' }} />
+          <Image src="/images/logosimple.png" alt="Diseño Detailing" width={80} height={80} className={styles.logoMobile} priority loading="eager" style={{ width: 'auto' }} />
         </Link>
-        
+
         <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
           <ul className={styles.navList}>
             {navLinks.map((link) => (
@@ -50,8 +52,8 @@ export default function Navbar() {
           </ul>
         </nav>
 
-        <button 
-          className={styles.mobileMenuBtn} 
+        <button
+          className={styles.mobileMenuBtn}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >

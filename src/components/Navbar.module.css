@@ -6,13 +6,13 @@
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 0, 0, 0.15);
-  padding: 1.2rem 0;
+  padding: 0.8rem 0;
   transition: all 0.3s ease;
 }
 
 .header.scrolled {
   background: rgba(10, 10, 10, 0.1);
-  padding: 0.8rem 0;
+  padding: 0.5rem 0;
 }
 
 .navbar {
@@ -22,19 +22,28 @@
 }
 
 .logo {
-  font-family: var(--font-primary), sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 0.1em;
-  color: var(--color-white-off);
+  display: flex;
+  align-items: center;
   transition: all 0.3s ease;
 }
 
-.header.scrolled .logo {
-  font-size: 1.4rem;
+.logoDesktop {
+  display: block;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  width: auto;
+  height: 100px;
 }
 
-.logo span {
-  color: var(--color-gold);
+.header.scrolled .logoDesktop {
+  height: 90px;
+}
+
+.logoMobile {
+  display: none;
+  object-fit: contain;
+  width: auto;
+  height: 70px;
 }
 
 .logo:hover {
@@ -72,11 +81,13 @@
   transition: width 0.3s ease;
 }
 
-.navLink:hover, .navLink.active {
+.navLink:hover,
+.navLink.active {
   color: var(--color-gold);
 }
 
-.navLink:hover::after, .navLink.active::after {
+.navLink:hover::after,
+.navLink.active::after {
   width: 100%;
 }
 
@@ -86,6 +97,14 @@
 }
 
 @media (max-width: 768px) {
+  .logoDesktop {
+    display: none;
+  }
+
+  .logoMobile {
+    display: block;
+  }
+
   .mobileMenuBtn {
     display: block;
   }
