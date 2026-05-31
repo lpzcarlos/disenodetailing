@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.footerGrid}`}>
-        
+
         <div className={styles.brandCol}>
           <Link href="/" className={styles.logo}>
             <Image src="/images/logocompleto.png" alt="Diseño Detailing" width={440} height={100} style={{ objectFit: 'contain', width: 'auto', height: '100px' }} />
@@ -36,14 +36,14 @@ export default function Footer() {
             </li>
             <li>
               <Phone size={18} className={styles.icon} />
-              <span>936 433 205 / 624 325 515</span>
+              <span>936 433 205 / 624 325 516</span>
             </li>
             <li>
               <Mail size={18} className={styles.icon} />
               <span>ddetailing.contacto@gmail.com</span>
             </li>
           </ul>
-          
+
           <div className={styles.socials}>
             <a href="#" aria-label="Instagram" className={styles.socialLink}>
               IG

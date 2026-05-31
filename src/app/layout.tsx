@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Barlow } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Chatbot from "../components/Chatbot";
 import "./globals.css";
 
 const fontPrimary = Bebas_Neue({
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Navbar />
         <main className="main-content">{children}</main>
         <Footer />
+        <Chatbot />
       </body>
     </html>
   );

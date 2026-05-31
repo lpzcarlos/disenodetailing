@@ -133,16 +133,60 @@ export default function Home() {
           >
             {[
               {
-                title: "Lavado Detallado a Mano",
-                desc: "El tratamiento base que todo coche merece. Limpieza exterior e interior con atención milimétrica a cada superficie."
+                title: "Detailing completo",
+                desc: "Limpieza profunda y detallada para devolverle al vehículo un aspecto limpio, cuidado y renovado."
               },
               {
-                title: "Pulido y Corrección de Pintura",
-                desc: "Eliminamos arañazos, marcas de agua y oxidación superficial. Recuperamos el brillo original de tu vehículo."
+                title: "Detailing completo Premium",
+                desc: "Incluye el detallado completo junto con un tratamiento intensivo de asientos para eliminar suciedad y manchas en profundidad."
               },
               {
-                title: "Tratamientos de Protección",
-                desc: "Ceras, selladores y coating cerámico para blindar la pintura de tu coche durante meses. Protección real, no cosmética."
+                title: "Limpieza de Motor a Vapor",
+                desc: "Limpieza segura del compartimento del motor para mejorar su aspecto y facilitar su mantenimiento."
+              },
+              {
+                title: "Pulido de faros",
+                desc: "Recupera la claridad y mejora la visibilidad eliminando el desgaste del paso del tiempo."
+              },
+              {
+                title: "Pulido Renove",
+                desc: "Recupera el brillo del vehículo eliminando la opacidad general de la pintura."
+              },
+              {
+                title: "PULIDO BRONZE",
+                desc: "Corrección estética básica para recuperar el brillo y eliminar defectos leves en la pintura."
+              },
+              {
+                title: "PULIDO PLATINUM",
+                desc: "Corrección avanzada de la pintura para eliminar defectos visibles y mejorar notablemente el acabado."
+              },
+              {
+                title: "PULIDO DIAMANTE",
+                desc: "Corrección de alta precisión para una restauración estética avanzada del vehículo."
+              },
+              {
+                title: "COATING CRYSTAL",
+                desc: "Protección cerámica profesional para mejorar el brillo y proteger la pintura frente al desgaste diario."
+              },
+              {
+                title: "SYSTEM X PRO",
+                desc: "Recubrimiento cerámico de alta durabilidad con mayor resistencia y acabado profesional premium."
+              },
+              {
+                title: "COATING DIAMOND",
+                desc: "Protección cerámica de alto nivel con máxima durabilidad y acabado de gama alta."
+              },
+              {
+                title: "RENEW",
+                desc: "Sellado cerámico rápido para mejorar brillo y protección en corto plazo."
+              },
+              {
+                title: "GLASS",
+                desc: "Tratamiento cerámico para cristales que mejora la visibilidad y facilita la conducción."
+              },
+              {
+                title: "REVIVE",
+                desc: "Restauración y protección de plásticos exteriores para recuperar su color y apariencia."
               }
             ].map((service, idx) => (
               <motion.div key={idx} className={styles.serviceCard} variants={fadeIn}>
@@ -220,7 +264,7 @@ export default function Home() {
             <span className={styles.trustLabel}>Vehículos tratados</span>
           </div>
           <div className={styles.trustItem}>
-            <span className={styles.trustNum}>+8</span>
+            <span className={styles.trustNum}>+10</span>
             <span className={styles.trustLabel}>Años de experiencia</span>
           </div>
           <div className={styles.trustItem}>

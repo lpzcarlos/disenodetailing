@@ -26,7 +26,7 @@ export default function ContactoPage() {
 
       <section className={styles.contact}>
         <div className={`container ${styles.splitGrid}`}>
-          <motion.div 
+          <motion.div
             className={styles.contactInfo}
             initial="hidden"
             whileInView="visible"
@@ -37,20 +37,20 @@ export default function ContactoPage() {
             <p className={styles.desc}>
               Estamos en el corazón de Sabadell. Ven a visitarnos o contáctanos por teléfono o email para cualquier consulta.
             </p>
-            
+
             <ul className={styles.infoList}>
               <li>
                 <MapPin className={styles.infoIcon} size={24} />
                 <div>
                   <strong>Dirección</strong>
-                  <span>Passeig Fleming, 16<br/>08206 Sabadell, Barcelona</span>
+                  <span>Passeig Fleming, 16<br />08206 Sabadell, Barcelona</span>
                 </div>
               </li>
               <li>
                 <Phone className={styles.infoIcon} size={24} />
                 <div>
                   <strong>Teléfono (Fijo y Móvil)</strong>
-                  <span>936 433 205<br/>624 325 515</span>
+                  <span>936 433 205<br />624 325 516</span>
                 </div>
               </li>
               <li>
@@ -63,7 +63,7 @@ export default function ContactoPage() {
             </ul>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className={styles.contactForm}
             initial="hidden"
             whileInView="visible"
